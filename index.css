@@ -1,0 +1,376 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+body {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.main-content {
+    position: relative;
+    color: rgb(228, 213, 213);
+    height: 650px;
+    margin: 0em;
+}
+section {
+    display: block;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #97212D;
+    padding: 1em 2em;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+.control {
+    display: flex;   
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+.nav-item {
+    padding-left: 1em;
+    text-decoration: none;
+    color: inherit;
+}
+.option{
+    display: flex;
+    align-items: center;
+}
+select {
+    background: none;
+    border: none;
+    color: inherit;
+}
+.sign {
+    margin-left: 1.5rem;
+    display: flex;
+}
+.sign-item {
+    text-decoration: none;
+    padding: 0 1em;
+    color: inherit;
+}
+
+.view-content{
+    margin: inherit;
+}
+#home {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: inherit;
+    margin-top: 40px;
+    align-items: center;
+    position: relative;
+}
+.radio-image {
+    width: 400%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    max-height: 1000px;
+}
+#home .image-items {
+   width: 25%;
+   transition: 1s;
+}
+#first-team {
+    position: relative;
+    width: 66.66%;
+    margin: 0 auto;
+}
+.roler {
+    font-size: 30px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    color: black;
+    margin-left: -3em;
+}
+.position-names {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: black;
+    border-bottom: solid rgb(216, 216, 216) 1px;
+}
+.sub-position {
+    display: flex;
+    width: inherit;
+    justify-content: space-evenly;
+}
+.position-btn {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+}
+.position-img {
+    width: 250px;
+    transition: 1s;
+}
+.position-btn {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+}
+.position-info {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+.position-number {
+    font-size: 10px;
+}
+.position-name {
+    width: 50%;
+    font-size: 20px;
+}
+#manager {
+    color: white;
+    padding-bottom: 1em;
+}
+.manager-visual {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    background-color: #3F3F3F;
+    padding-top: 3em;
+}
+.visual-text {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+   margin-top: 25px;
+}
+.manager-visual-items {
+    flex-basis: 20%;
+}
+.visual-name {
+    text-transform: uppercase;
+}
+.role {
+    padding-bottom: 1em;
+    font-size: 1.9em;
+    position: relative;
+    top: -1.5em;
+}
+.role-name {
+    font-size: 1.6em;
+    width: 70%;
+}
+.visual-message {
+    width: 70%;
+    font-size: 1.5em;
+    font-style: italic;
+    color: antiquewhite;
+    margin-top: 100px;
+}
+.visual-image img {
+    display: flex;
+    align-self: flex-end;
+}
+.visual-statics {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.match, .wins, .trophies {
+    margin-bottom: 2em;
+}
+.visual-statics .number {
+    display: block;
+    font-size: 20px;
+}
+.manager-info {
+    width: 60%;
+    margin: 3em auto;
+    color: black;
+}
+.info-bio {
+    border-bottom:grey solid 1px ;
+}
+.info-bio .bio-title {
+    text-transform: uppercase;
+    color: grey;
+    margin: 16px 0;
+}
+.bio-text {
+    text-decoration: none;
+}
+.info-shortcut {
+    display: flex;
+    text-transform: capitalize;
+}
+.shortcut-items {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.sub-items {
+    flex: 1;
+}
+.items-title {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+.items-date {
+    font-size: 1.5em;
+    color: red;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.norway {
+    position: relative;
+    top: 0.5em;
+    padding-right: 0.5em;
+}
+.items-country img {
+    width: 30px;
+}
+#legend{
+    background-color: #3F3F3F;
+    margin: 0;
+    overflow: hidden;
+    padding: 3em 0;
+}
+#legend .role {
+    color: white;
+    position: relative;
+    left: 130px;
+    top: -20px;
+}
+#legend .role::after {
+    width: 130px;
+}
+.role::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 150px;
+    background-color: red;
+}
+.sub-button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.btn{
+    margin: 20px;
+}
+.btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(78, 73, 73);
+    overflow: hidden;
+    position: relative;
+}
+.btn-image {
+    width: 100%;
+    transition: 1s;
+}
+.btn-name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1;
+    bottom: 0;
+    left: 10%;
+}
+.btn-name::before {
+    display: block;
+    content: " ";
+    height: 2px;
+    background-color: red;
+    width: 50%;
+    transition: 1s;
+}
+.btn::after {
+    content: " ";
+    display: block;
+    width: 200px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    bottom: 0;
+}
+footer {
+    position: relative;
+}
+footer {
+    position: relative;
+    bottom: -50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.sponsor{
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.sponsor div img{
+    width: 100px;
+    margin: 2.1em;
+    opacity: 0.5;
+}
+footer .contact {
+    position: absolute;
+    display: flex;
+    bottom: 20%;
+    right: 5%;
+}
+.contact-items {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 0.5em;
+    transition: 0.7s;
+}
+
+
+
