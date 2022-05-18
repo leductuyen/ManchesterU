@@ -47,11 +47,23 @@ section {
     align-items: center;
     padding-left: 1em;
 }
+
 .nav-item {
     padding-left: 1em;
     text-decoration: none;
     color: inherit;
+    
+   
 }
+.nav-item::before {
+    display: block;
+    content: " ";
+    height: 2px;
+    background-color: red;
+    width: 50%;
+    transition: 1s;
+}
+
 .option{
     display: flex;
     align-items: center;
@@ -108,6 +120,14 @@ select {
     color: black;
     margin-left: -3em;
 }
+.roler ::after {
+    display: block;
+    content: " ";
+    
+    height: 3px;
+    width: 163px;
+    background-color: red;
+}
 .position-names {
     font-weight: bold;
     font-size: 1.25em;
@@ -128,19 +148,21 @@ select {
     position: relative;
     overflow: hidden;
 }
+.position-btn:hover{
+    cursor: pointer;
+}
+.position-btn:hover .position-img{
+    transform: scale(1.1);
+
+}
+.position-btn:hover .position-number::after{
+    width: 40px;
+}
 .position-img {
     width: 250px;
     transition: 1s;
 }
-.position-btn {
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    border-radius: 10px;
-    margin: 1em;
-    position: relative;
-    overflow: hidden;
-}
+
 .position-info {
     position: absolute;
     bottom: 10%;
@@ -148,6 +170,14 @@ select {
 }
 .position-number {
     font-size: 10px;
+}
+.position-number ::after {
+    display: block;
+    content: " ";
+    height: 1px;
+    width: 20px;
+    background-color: red;
+    transition: 1s;
 }
 .position-name {
     width: 50%;
@@ -299,6 +329,15 @@ select {
     background-color: rgb(78, 73, 73);
     overflow: hidden;
     position: relative;
+}
+.btn:hover .btn-name::before{
+    width: 100%;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn:hover .btn-image{
+    transform: scale(1.1);
 }
 .btn-image {
     width: 100%;
