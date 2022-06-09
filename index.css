@@ -55,15 +55,14 @@ section {
     
    
 }
-.nav-item::before {
+.nav-item::after {
     display: block;
     content: " ";
     height: 2px;
     background-color: red;
-    width: 50%;
+    width: 80%;
     transition: 1s;
 }
-
 .option{
     display: flex;
     align-items: center;
